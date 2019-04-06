@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bearwolfapps.allofthelunch">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="All of the lunch"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.bearwolfapps.allofthelunch.AboutActivity"
+            android:label="aboutactivity"
+            android:parentActivityName="com.bearwolfapps.allofthelunch.MainActivity"></activity>
+        <activity
+            android:name=".SettingsActivity2"
+            android:label="Settings2" />
+        <activity
+            android:name="com.bearwolfapps.allofthelunch.SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName="com.bearwolfapps.allofthelunch.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bearwolfapps.allofthelunch.MainActivity" />
+        </activity>
+        <activity android:name="com.bearwolfapps.allofthelunch.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

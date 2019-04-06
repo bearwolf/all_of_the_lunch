@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <PreferenceCategory android:title="First the importants stuff">
+
+    </PreferenceCategory>
+
+    <ListPreference
+        android:defaultValue="@string/pref_theme_apptheme_value"
+        android:entries="@array/theme_labels"
+        android:entryValues="@array/theme_values"
+        android:key="@string/pref_theme_key"
+        android:title="Change Font"
+        app:iconSpaceReserved="false"
+        />
+
+
+
+
+
+<!--
+ <EditTextPreference
+
+     android:key="@string/pref_size_key"
+     android:title="@string/text_size"/>
+-->
+
+
+
+<!--    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="display_text"
+        android:summaryOff="Invisible"
+        android:summaryOn="Visible"
+        app:iconSpaceReserved="false"
+        android:title="Display Text"
+        android:visibility="gone"
+        />-->
+    <PreferenceCategory android:title="Not working in the Yle building?">
+
+    </PreferenceCategory>
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="alltidUtanfor"
+        android:summaryOff="Only show close restaurants on startup"
+        android:summaryOn="Show all restaurants on startup"
+        android:title="Show restaurants outside of Yle area on startup"
+        app:iconSpaceReserved="false" />
+    <PreferenceCategory android:title="Hide or show restaurants">
+
+    </PreferenceCategory>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="noPiccolo"
+        android:summaryOff="Hide Piccolo"
+        android:summaryOn="Show Piccolo"
+        android:title="Piccolo (Inside Yle)"
+        app:iconSpaceReserved="false"/>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="noStudio"
+        android:summaryOff="Hide Studio 10"
+        android:summaryOn="Show Studio 10"
+        android:title="GVC Studio 10 (Outside Yle)"
+        app:iconSpaceReserved="false"/>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="noHuoltamo"
+        android:summaryOff="Hide Huoltamo Palmia"
+        android:summaryOn="Show Huoltamo Palmia"
+        android:title="Huoltamo Palmia (Inside Yle)"
+        app:iconSpaceReserved="false"/>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="noFazer"
+        android:summaryOff="Hide Fazer Café Yle Luova Talo"
+        android:summaryOn="Show Fazer Café Yle Luova Talo"
+        android:title="Fazer Cafe (Inside Yle)"
+        app:iconSpaceReserved="false"/>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="noIsoPaj"
+        android:summaryOff="Hide Iso Paja"
+        android:summaryOn="Show Iso Paja"
+        android:title="Iso Paja (Outside Yle)"
+        app:iconSpaceReserved="false"/>
+
+</PreferenceScreen>
